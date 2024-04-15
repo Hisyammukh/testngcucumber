@@ -6,12 +6,12 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 
 public class Hooks extends Config {
-    @Before
+    @BeforeSuite
     public void openBrowser() throws MalformedURLException{
         setupBrowser();
     }
 
-    @After
+    @AfterSuite
     public void tearDown(){
         quitBrowser();
     }
